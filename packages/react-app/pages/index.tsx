@@ -43,11 +43,7 @@ export default function Home() {
           <h2 className="font-bold text-2xl sm:text-4xl lg:text-5xl mb-5 w-full md:w-2/5 leading-snug text-center">
             Explore All Sneakers you desire.
           </h2>
-          <Reveal delay={200} duration={1000} keyframes={fadeInDownShorter}>
-            <Button variant={undefined} isLink={undefined} href={undefined} onClick={undefined}>
-              Get Started
-            </Button>
-          </Reveal>
+      
         </div>
       </Container>
       <Footer />
