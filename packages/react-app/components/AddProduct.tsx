@@ -1,7 +1,8 @@
 // This component is used to render the AddProductModal component
 
 // Importing the AddProductModal component
-import AddProductModal from "./AddProductModal";
+
+import AddProductModal from '@/components/modals/AddProductModal';
 
 // Define the AddProduct component
 const AddProduct = () => {
