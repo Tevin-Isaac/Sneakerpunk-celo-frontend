@@ -89,7 +89,7 @@ const RandomProductModal = () => {
                   aria-modal="true"
                   aria-labelledby="modal-headline"
                 >
-                  <div className="bg-white px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
+                  <div className="bg-purple-900 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                     {!showProduct ?
                       <div className="text-center">
                         <Image className="block w-full sm:block lg:block" src="/randomImg.gif" width="32" height="32" alt="random image"/>

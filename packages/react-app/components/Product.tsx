@@ -123,7 +123,7 @@ const Product = ({ id, setError, setLoading, clear }: any) => {
           {/* Show the number of products sold */}
           <span
             className={
-              "absolute z-10 right-0 mt-4 bg-amber-400 text-black p-1 rounded-l-lg px-4"
+              "absolute z-10 right-0 mt-4 bg-amber-400 text-white p-1 rounded-l-lg px-4"
             }
           >
             {product.sold} sold
@@ -165,7 +165,7 @@ const Product = ({ id, setError, setLoading, clear }: any) => {
             {/* Buy button that calls the purchaseProduct function on click */}
             <button
               onClick={purchaseProduct}
-              className="mt-4 h-14 w-full border-[1px] border-white text-white p-2 rounded-lg hover:bg-black hover:text-white"
+              className="mt-4 h-14 w-full border-[1px] border-white text-white p-2 rounded-lg hover:bg-purple-900 hover:text-white"
             >
               {/* Show the product price in cUSD */}
               Buy for {productPriceFromWei} cUSD
