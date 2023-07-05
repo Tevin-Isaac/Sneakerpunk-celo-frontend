@@ -2,6 +2,7 @@
 ## Sneakerpunk
 Sneakerpunk is the platform where anyone can explore,purchase.list and sell sneakers.
 
+
 <p align="center"> 
   <img width="100px" src="https://github.com/celo-org/celo-composer/blob/main/images/readme/celo_isotype.svg" align="center" alt="Celo" />
  <h2 align="center">Celo Composer</h2>
@@ -183,7 +184,7 @@ See the [open issues](https://github.com/celo-org/celo-composer/issues) for a fu
 
 ## Contributing
 
-We welcome contributions from the community.
+We welcome contributions from the community and everyone.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
