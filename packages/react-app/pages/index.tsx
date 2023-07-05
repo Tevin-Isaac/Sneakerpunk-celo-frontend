@@ -9,9 +9,13 @@ import {
   Hero,
   Navbar,
   Sponsor,
-  TopCreator
+  TopCreator,
+ 
+
 } from '@/components';
 import React from 'react';
+
+
 import AddProductModal from "@/components/modals/AddProductModal";
 import ProductList from "@/components/ProductList";
 import RandomProductModal from "@/components/modals/RandomProductModal";
@@ -22,11 +26,11 @@ export default function Home() {
     <div className='h-full main_bg text-white overflow-hidden' id='top'>
       <Navbar />
       <div>
-        <AddProductModal />
-    
-        <RandomProductModal/>
+         <AddProductModal />
+         {/* <DeleteProductModal id={0} /> */}
+         <RandomProductModal/>
         <ProductList /> 
-      </div>
+    </div>
       <Hero />
       <Sponsor />
       <AboutUs />
@@ -34,8 +38,12 @@ export default function Home() {
       <FeaturedArtworks />
       <TopCreator />
       <FAQ />
-
+   
       <Footer />
+ 
     </div>
   );
 };
+  
+
+
