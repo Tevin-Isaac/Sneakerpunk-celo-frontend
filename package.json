@@ -1,0 +1,37 @@
+{
+    "name": "celo-frontend-101",
+    "version": "1.0.0",
+    "description": "Custom Celo Composer project.",
+    "private": true,
+    "author": "Celo",
+    "license": "MIT",
+    "scripts": {
+        "react-app:dev": "yarn workspace @celo-frontend-101/react-app dev",
+        "react-app:build": "yarn workspace @celo-frontend-101/react-app build",
+        "react-app:start": "yarn workspace @celo-frontend-101/react-app start",
+        "react-app:lint": "yarn workspace @celo-frontend-101/react-app lint",
+        "hardhat:test": "yarn workspace @celo-frontend-101/hardhat test",
+        "hardhat:test-local": "yarn workspace @celo-frontend-101/hardhat test-local",
+        "hardhat:accounts": "yarn workspace @celo-frontend-101/hardhat accounts",
+        "hardhat:devchain": "yarn workspace @celo-frontend-101/hardhat devchain",
+        "hardhat:deploy": "yarn workspace @celo-frontend-101/hardhat deploy",
+        "hardhat:deploy-reset-watch": "yarn workspace @celo-frontend-101/hardhat deploy-reset-watch",
+        "hardhat:watch": "yarn workspace @celo-frontend-101/hardhat watch",
+        "hardhat:fork-mainnet": "yarn workspace @celo-frontend-101/hardhat fork-mainnet"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/celo-org/celo-composer.git"
+    },
+    "bugs": {
+        "url": "https://github.com/celo-org/celo-composer/issues"
+    },
+    "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+    "workspaces": [
+        "packages/*"
+    ],
+    "keywords": [
+        "celo-composer",
+        "celo"
+    ]
+}
