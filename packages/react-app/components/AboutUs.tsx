@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button, Container } from '.';
-import { Reveal } from 'react-awesome-reveal';
+import {  Container } from '.';
+
 
 import Image from 'next/image';
 const AboutUs = () => {
