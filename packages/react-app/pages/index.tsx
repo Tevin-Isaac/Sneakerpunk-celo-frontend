@@ -9,25 +9,23 @@ import {
   Hero,
   Navbar,
   Sponsor,
-  TopCreator,
+  TopCreator
 } from '@/components';
 import React from 'react';
-import { Reveal } from 'react-awesome-reveal';
-import { fadeInDownShorter } from '@/keyframes';
-import AddProductModal from '@/components/modals/AddProductModal';
-import ProductList from '@/components/ProductList';
-import RandomProductModal from '@/components/modals/RandomProductModal';
-// import DeleteProductModal from '@/components/modals/DeleteProductModal';
-
+import AddProductModal from "@/components/modals/AddProductModal";
+import ProductList from "@/components/ProductList";
+import RandomProductModal from "@/components/modals/RandomProductModal";
+// import DeleteProductModal from "@/components/modals/DeleteProductModal";
+// Export the Home component
 export default function Home() {
-  return (
-    <div className="h-full main_bg text-white overflow-hidden" id="top">
+  return ( 
+    <div className='h-full main_bg text-white overflow-hidden' id='top'>
       <Navbar />
       <div>
         <AddProductModal />
         {/* <DeleteProductModal id={0} /> */}
-        <RandomProductModal />
-        <ProductList />
+        <RandomProductModal/>
+        <ProductList /> 
       </div>
       <Hero />
       <Sponsor />
@@ -38,10 +36,12 @@ export default function Home() {
       <FAQ />
       <Container className={undefined}>
         <div
-          className="bg-gradient-to-b from-[#ff9a02] to-[#ffa806] rounded-xl py-20 px-10 flex items-center justify-center shadow-lg flex-col mb-44"
+          className={
+            'bg-gradient-to-b from-[#ff9a02] to-[#ffa806] rounded-xl py-20 px-10 flex items-center justify-center shadow-lg flex-col mb-44'
+          }
         >
-          <h2 className="font-bold text-2xl sm:text-4xl lg:text-5xl mb-5 w-full md:w-2/5 leading-snug text-center">
-            Explore All Sneakers you desire.
+          <h2 className='font-bold text-2xl sm:text-4xl lg:text-5xl mb-5 w-full md:w-2/5 leading-snug text-center'>
+              Explore All Sneakers you desire.
           </h2>
       
         </div>
@@ -49,4 +49,4 @@ export default function Home() {
       <Footer />
     </div>
   );
-}
+};
