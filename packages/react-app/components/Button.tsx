@@ -3,11 +3,18 @@ import React from 'react';
 
 const Button = ({
   className = '',
-  variant,
-  isLink,
-  href,
+  variant = '',
+  isLink = false,
+  href = '',
   onClick,
   children,
+}: {
+  className?: string,
+  variant?: string,
+  isLink?: boolean,
+  href?: string,
+  onClick?: React.MouseEventHandler<HTMLButtonElement>,
+  children?: React.ReactNode, // Explicitly defining the type of children
 }) => {
   let rootClass = 'py-2 px-5 text-center rounded-xl ';
   if (variant === 'primary') {
