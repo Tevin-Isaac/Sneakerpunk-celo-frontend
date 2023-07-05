@@ -21,7 +21,6 @@ export default function Home() {
       <Navbar />
       <div>
         <AddProductModal />
-        {/* <DeleteProductModal id={0} /> */}
         <RandomProductModal />
         <ProductList />
       </div>
