@@ -2,14 +2,18 @@ import Image from 'next/image';
 import React from 'react';
 import { Button } from '.';
 
-const CreatorItem = ({ data }) => {
+interface CreatorItemProps {
+  data: any;
+}
+
+const CreatorItem: React.FC<CreatorItemProps> = ({ data }) => {
   const { image, bgimage, username } = data;
   return (
     <div className='hover:bg-[#ffffff66] transition duration-300 ease-in-out bg-[#ffffff1a] overflow-hidden rounded-lg shadow-lg'>
       <div className='rounded-lg overflow-hidden mb-3 relative h-[250px] w-full'>
         <Image
           objectFit='cover'
-          objectPosition={'center'}
+          objectPosition='center'
           layout='fill'
           src={bgimage}
           className='object-cover object-center'
@@ -28,10 +32,9 @@ const CreatorItem = ({ data }) => {
         </div>
         <p className='font-bold text-xl text-center mb-4'>{username}</p>
         <p className='opacity-50 text-center text-sm mb-5'>
-          Create,elevate,motivate.
+        
         </p>
-
-        <Button className='w-full' variant={'primary'}>
+        <Button className='w-full' variant='primary'>
           + Follow
         </Button>
       </div>

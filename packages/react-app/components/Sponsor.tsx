@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Sponsor = () => {
   return (
     <Container className={'grid grid-cols-3 gap-5 mb-32 items-center'}>
-      <Reveal keyframes={fadeInUp} duration={800} delay={200}>
+
         <div className='flex items-center justify-center relative w-full h-[350px]'>
           <Image
             layout='fill'
@@ -16,8 +16,8 @@ const Sponsor = () => {
             alt='dacade'
           />
         </div>
-      </Reveal>
-      <Reveal keyframes={fadeInUp} duration={800} delay={400}>
+   
+   
         <div className='flex items-center justify-center relative w-full h-[60px]'>
           <Image
             layout='fill'
@@ -27,8 +27,8 @@ const Sponsor = () => {
             alt='ethereum'
           />
         </div>
-      </Reveal>
-      <Reveal keyframes={fadeInUp} duration={800} delay={600}>
+     
+     
         <div className='flex items-center justify-center relative w-full h-[300px]'>
           <Image
             layout='fill'
@@ -38,7 +38,7 @@ const Sponsor = () => {
             alt='celo'
           />
         </div>
-      </Reveal>
+
     </Container>
   );
 };

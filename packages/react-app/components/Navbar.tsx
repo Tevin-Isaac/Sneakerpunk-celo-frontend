@@ -9,12 +9,12 @@ const Navbar = () => {
   const toggleMenu = () => setMenu(!menu);
   const closeMenu = () => setMenu(false);
 
-  const refMenu = useRef(null);
+  const refMenu = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const handleClick = (e) => {
+    const handleClick = (e: MouseEvent) => {
       if (refMenu.current) {
-        if (refMenu.current.contains(e.target)) {
+        if (refMenu.current.contains(e.target as Node)) {
           return;
         }
       }
@@ -71,7 +71,7 @@ const Navbar = () => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="sm:hidden" ref={refMenu}>
             <div className="space-y-1 pt-2 pb-4">
               <a
                 href="#"

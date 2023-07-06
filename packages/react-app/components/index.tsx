@@ -9,7 +9,7 @@ import Footer from './Footer';
 import Hero from './Hero';
 import Input from './Input';
 import Logo from './Logo';
-import Navbar from './Navbar.tsx';
+import Navbar from './Navbar';
 import NFTItem from './NFTItem';
 import Sponsor from './Sponsor';
 import TopCreator from './TopCreator';

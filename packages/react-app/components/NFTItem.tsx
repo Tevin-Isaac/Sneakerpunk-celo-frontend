@@ -2,7 +2,16 @@ import React from 'react';
 import { Button } from '.';
 import Image from 'next/image';
 
-const NFTItem = ({ data }) => {
+interface NFTItemProps {
+  data: {
+    image: string;
+    username: string;
+    price: number;
+    product_name: string;
+  };
+}
+
+const NFTItem: React.FC<NFTItemProps> = ({ data }) => {
   const { image, username, price, product_name } = data;
   return (
     <div className='hover:bg-[#ffffff66] transition duration-300 ease-in-out bg-[#ffffff1a] p-5 rounded-lg shadow-lg'>

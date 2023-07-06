@@ -1,14 +1,21 @@
 import { list_FAQ } from '@/fake_data';
 import React, { useState } from 'react';
 import { Container } from '.';
-import { Reveal, Fade } from 'react-awesome-reveal';
 import { fadeInDownShorter2, fadeInLeft, fadeInRight } from '@/keyframes';
+
+interface FAQItem {
+  id: number;
+  title: string;
+  desc: string;
+  status: boolean;
+}
+
 const FAQ = () => {
-  const [faq, setFaq] = useState(
+  const [faq, setFaq] = useState<FAQItem[]>(
     list_FAQ.map((item) => ({ ...item, status: false })),
   );
 
-  const toggleFaq = (data) => {
+  const toggleFaq = (data: FAQItem) => {
     const newData = faq.map((item) => {
       return {
         ...item,
@@ -19,32 +26,30 @@ const FAQ = () => {
   };
 
   return (
-    <Container className={'mb-44 scroll-mt-10'} id='faq'>
+    <Container className={'mb-44 scroll-mt-10'}>
       <div className='text-center mb-10'>
         <h2 className='font-bold mx-auto leading-snug w-full sm:w-[400px] text-3xl mb-2'>
           Frequently Asked Question
         </h2>
-        <Reveal keyframes={fadeInDownShorter2} duration={800} delay={100}>
-          <p className='opacity-50'>Have a question?</p>
-        </Reveal>
+        <div className='opacity-50'>Have a question?</div>
       </div>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
         {faq.map((item, i) => (
-          <Reveal
+          <div
             key={i}
-            keyframes={(i + 1) % 2 === 0 ? fadeInLeft : fadeInRight}
-            duration={800}
-            delay={100}
+            className={`${
+              (i + 1) % 2 === 0 ? 'animate-fadeInLeft' : 'animate-fadeInRight'
+            }`}
           >
             <AccordionItem toggleFaq={toggleFaq} data={item} />
-          </Reveal>
+          </div>
         ))}
       </div>
     </Container>
   );
 };
 
-const AccordionItem = ({ data, toggleFaq }) => {
+const AccordionItem = ({ data, toggleFaq }: { data: FAQItem; toggleFaq: (data: FAQItem) => void }) => {
   return (
     <div
       onClick={() => toggleFaq(data)}
@@ -59,11 +64,11 @@ const AccordionItem = ({ data, toggleFaq }) => {
         </p>
       </div>
       {data.status && (
-        <Fade>
+        <div>
           <p className={data.status ? 'opacity-90' : 'opacity-50'}>
             {data.desc}
           </p>
-        </Fade>
+        </div>
       )}
     </div>
   );

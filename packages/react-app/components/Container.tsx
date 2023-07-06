@@ -1,6 +1,11 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
-const Container = ({ className, children, ...rest }) => {
+interface ContainerProps {
+  className?: string;
+  children: ReactNode;
+}
+
+const Container = ({ className, children, ...rest }: ContainerProps) => {
   return (
     <div
       {...rest}
