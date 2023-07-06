@@ -92,7 +92,7 @@ const Footer = () => {
       </div>
       <div className='flex justify-center items-center mb-8'>
         &copy; <span className='font-bold mr-1'> </span>
-        Design By <span className='font-bold ml-1'>Tevin</span>
+        Design By <span className='font-bold ml-1'>Tevin Isaac</span>
       </div>
       <div
         onClick={scrollToTop}
