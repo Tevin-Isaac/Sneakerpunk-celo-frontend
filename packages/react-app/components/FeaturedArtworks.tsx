@@ -1,8 +1,8 @@
-import { list_artwork } from '/fake_data';
+import { list_artwork } from '@/fake_data';
 import React from 'react';
 import { Container, NFTItem } from '.';
 import { Reveal } from 'react-awesome-reveal';
-import { fadeInDownShorter, fadeInDownShorter2 } from '/keyframes';
+import { fadeInDownShorter, fadeInDownShorter2 } from '@/keyframes';
 
 const FeaturedArtworks = () => {
   return (

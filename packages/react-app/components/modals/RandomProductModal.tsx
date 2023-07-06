@@ -108,11 +108,11 @@ const RandomProductModal = () => {
                       /> 
                     }
                   </div>
-                  <div className="bg-gray-200 px-4 py-3 text-right">
+                  <div className="bg-purple-900 px-4 py-3 text-right">
                     {/* Button to close the modal */}
                     <button
                       type="button"
-                      className="py-2 px-4 bg-gray-500 text-white rounded hover:bg-gray-700 mr-2"
+                      className="py-2 px-4 bg-red-500 text-white rounded hover:bg-gray-700 mr-2"
                       onClick={() => setVisible(false)}
                     >
                       <i className="fas fa-times"></i> Cancel
@@ -120,7 +120,7 @@ const RandomProductModal = () => {
                     {/* Button to random product */}
                     <button
                       type="button"
-                      className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-700 mr-2"
+                      className="py-2 px-4 bg-yellow-500 text-white rounded hover:bg-blue-700 mr-2"
                       onClick={() => loadingRandom()}
                     >
                       Choose again

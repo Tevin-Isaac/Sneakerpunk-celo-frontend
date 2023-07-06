@@ -1,8 +1,8 @@
-import { list_top_creator } from '/fake_data';
+import { list_top_creator } from '@/fake_data';
 import React from 'react';
 import { Container, CreatorItem } from '.';
 import { Reveal } from 'react-awesome-reveal';
-import { fadeInDownShorter, fadeInDownShorter2 } from '/keyframes';
+import { fadeInDownShorter, fadeInDownShorter2 } from '@/keyframes';
 const TopCreator = () => {
   return (
     <Container className={'mb-44'}>

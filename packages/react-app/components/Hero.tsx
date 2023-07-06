@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Container } from '.';
 import { JackInTheBox, Reveal } from 'react-awesome-reveal';
-import { fadeInDownShorter, fadeInLeft, fadeInUp } from '/keyframes';
+import { fadeInDownShorter, fadeInLeft, fadeInUp } from '@/keyframes';
 import Image from 'next/image';
 
 const Hero = () => {

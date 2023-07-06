@@ -1,8 +1,9 @@
-import { list_collection } from '/fake_data';
+import { list_collection } from '@/fake_data';
 import React, { useState } from 'react';
 import { Button, Container, NFTItem } from '.';
 import { Reveal } from 'react-awesome-reveal';
-import { fadeInDownShorter, fadeInDownShorter2, fadeInLeft } from '/keyframes';
+import { fadeInDownShorter, fadeInDownShorter2, fadeInLeft } from '@/keyframes';
+
 const Collections = () => {
   const [listBtn, setListBtn] = useState([
     {
@@ -27,7 +28,7 @@ const Collections = () => {
     },
   ]);
 
-  const handleClickMenu = (name) => {
+  const handleClickMenu = (name: string) => {
     const filterBtn = listBtn.map((item) => {
       return {
         ...item,
@@ -41,11 +42,11 @@ const Collections = () => {
     <Container id='collections' className={'mb-44 scroll-mt-10'}>
       <div className='text-center mb-8'>
         <h2 className='font-bold text-3xl mb-2'>Collection</h2>
-        <Reveal keyframes={fadeInDownShorter2} duration={800} delay={100}>
+        
           <p className='opacity-50 w-full sm:w-[400px] mx-auto'>
             Here are some of our awesome Hotseller collection you can consider purchasing.
           </p>
-        </Reveal>
+      
       </div>
       <div className='grid grid-cols-2 sm:grid-cols-4 gap-4 mb-5'>
         {listBtn.map((item, i) => (
@@ -74,7 +75,9 @@ const Collections = () => {
             duration={500}
             delay={50 * (i + 1)}
           >
-            <NFTItem data={item} />
+            <React.Fragment>
+              <NFTItem data={item} />
+            </React.Fragment>
           </Reveal>
         ))}
       </div>

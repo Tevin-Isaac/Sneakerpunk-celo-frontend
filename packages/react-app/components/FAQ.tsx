@@ -1,8 +1,8 @@
-import { list_FAQ } from '/fake_data';
+import { list_FAQ } from '@/fake_data';
 import React, { useState } from 'react';
 import { Container } from '.';
 import { Reveal, Fade } from 'react-awesome-reveal';
-import { fadeInDownShorter2, fadeInLeft, fadeInRight } from '/keyframes';
+import { fadeInDownShorter2, fadeInLeft, fadeInRight } from '@/keyframes';
 const FAQ = () => {
   const [faq, setFaq] = useState(
     list_FAQ.map((item) => ({ ...item, status: false })),
