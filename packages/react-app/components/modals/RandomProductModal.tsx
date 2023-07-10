@@ -5,6 +5,7 @@ import {useState } from "react";
 import Image from "next/image";
 import { useContractCall } from "@/hooks/contract/useContractRead";
 import Product from "@/components/Product";
+import loadingShoeImg from "./loading_shoe.gif"
 
 import ErrorAlert from "@/components/alerts/ErrorAlert";
 import LoadingAlert from "@/components/alerts/LoadingAlert";
@@ -92,7 +93,7 @@ const RandomProductModal = () => {
                   <div className="bg-purple-900 px-4 pt-5 pb-4 sm:p-6 sm:pb-4">
                     {!showProduct ?
                       <div className="text-center">
-                        <Image className="block w-full sm:block lg:block" src="/randomImg.gif" width="32" height="32" alt="random image"/>
+                        <Image className="block w-full sm:block lg:block" src={loadingShoeImg} width="32" height="32" alt="random image"/>
                         <span>{loadingMessage}</span>
                       </div> :
                       <Product
