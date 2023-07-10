@@ -13,10 +13,11 @@ Sneakerpunk is the platform where anyone can explore,purchase.list and sell snea
 ![Screenshot from 2023-07-10 14-16-41](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/e0372a3f-7334-4bc2-9d82-c9d26f39ad91)
 ![Screenshot from 2023-07-10 14-16-58](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/7bf536c6-e907-4933-b45d-d8073c090f8e)
 ![Screenshot from 2023-07-10 14-17-08](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/f22b8bff-bb9e-488e-9dc7-c272c921e9d4)
-![Screenshot from 2023-07-10 14-17-16](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/e7d4c613-86b6-4226-9654-ae47a7bf536e)
-![Screenshot from 2023-07-10 14-17-25](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/a195c01b-eb5b-4fb8-a7ff-f7df7c2fbd4b)
+![Screenshot from 2023-07-10 14-17-16](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/3204fdd6-807a-431e-aa83-94f6de6ccd0a)
+![Screenshot from 2023-07-10 14-17-25](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/f850c174-4d0b-4e36-8314-bc8fa9891208)
 ![Screenshot from 2023-07-10 14-17-33](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/94998ead-cc3c-432e-b2de-fc12bd1d672a)
-![Screenshot from 2023-07-10 14-17-43](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/83edead1-b435-480e-b11e-1b30fcbe0aa3)
+![Screenshot from 2023-07-10 14-17-43](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/2228242f-c8ca-4732-ab1c-fb6edb750634)
+
 
 
 
