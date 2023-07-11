@@ -22,17 +22,17 @@ const Footer = () => {
             <p className='font-bold text-xl mb-5'>About</p>
             <div className='flex flex-col'>
               <Link href='/' className='mb-4 opacity-50'>
-                Product
+                Sneakers
               </Link>
               <Link href='/' className='mb-4 opacity-50'></Link>
               <Link href='/' className='mb-4 opacity-50'>
-                Term & Condition
+                Terms & Conditions
               </Link>
               <Link href='/' className='mb-4 opacity-50'>
                 FAQ
               </Link>
             </div>
-            Collabos
+           Sneaker Collabos
           </div>
           <div>
             <p className='font-bold text-xl mb-5'>Company</p>
