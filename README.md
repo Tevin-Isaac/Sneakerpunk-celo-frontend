@@ -7,8 +7,8 @@
 Sneakerpunk is the platform where anyone can explore,purchase.list and sell sneakers.
 
 ## Screenshot
-![Screenshot from 2023-07-10 14-16-14](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/0e895f65-970b-47ef-a795-02bd20734b37)
-![Screenshot from 2023-07-10 14-18-11](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/745a39f7-7830-4593-84ea-a6788dfa8c41)
+![Screenshot from 2023-07-13 22-50-29](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/cbc51a79-d99e-47ec-91f8-8078ee5789ed)
+![Screenshot from 2023-07-13 22-51-21](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/ef421e80-527c-4505-909c-8235b61f15ef)
 ![Screenshot from 2023-07-10 14-16-31](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/7861dd75-0794-433e-bb1b-2824dcc898e8)
 ![Screenshot from 2023-07-10 14-16-41](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/e0372a3f-7334-4bc2-9d82-c9d26f39ad91)
 ![Screenshot from 2023-07-10 14-16-58](https://github.com/Tevin-Isaac/Sneakerpunk-celo-frontend/assets/81568615/7bf536c6-e907-4933-b45d-d8073c090f8e)
