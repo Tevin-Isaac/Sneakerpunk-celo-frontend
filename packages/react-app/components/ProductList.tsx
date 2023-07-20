@@ -1,66 +1,81 @@
-// This component is used to display all the products in the marketplace
-
-// Importing the dependencies
-import { useState } from "react";
-// Import the useContractCall hook to read how many products are in the marketplace via the contract
+import React, { useState } from "react";
 import { useContractCall } from "@/hooks/contract/useContractRead";
-// Import the Product and Alert components
 import Product from "@/components/Product";
+import ProductFilter from "@/components/ProductFilter";
 import ErrorAlert from "@/components/alerts/ErrorAlert";
 import LoadingAlert from "@/components/alerts/LoadingAlert";
 import SuccessAlert from "@/components/alerts/SuccessAlert";
 
-// Define the ProductList component
-const ProductList = () => {
-  // Use the useContractCall hook to read how many products are in the marketplace contract
+interface ProductData {
+  id: number;
+  name: string;
+  // Add other product properties here as needed
+}
+
+const ProductList: React.FC = () => {
   const { data } = useContractCall("getProductsLength", [], true);
-  // Convert the data to a number
   const productLength = data ? Number(data.toString()) : 0;
-  // Define the states to store the error, success and loading messages
+
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
   const [loading, setLoading] = useState("");
-  // Define a function to clear the error, success and loading states
+  const [filteredProducts, setFilteredProducts] = useState<ProductData[]>(getProducts());
+
   const clear = () => {
     setError("");
     setSuccess("");
     setLoading("");
   };
-  // Define a function to return the products
-  const getProducts = () => {
-    // If there are no products, return null
-    if (!productLength) return null;
-    const products = [];
-    // Loop through the products, return the Product component and push it to the products array
+
+  function getProducts(): ProductData[] {
+    if (!productLength) return [];
+
+    // Replace the hardcoded product names with the actual product names
+    const productNames = [
+      "Air Jordan 1 OG",
+      "Nike SB Parra",
+      "Air Jordan 1 pinky",
+      "Hermes Sneakers",
+    ];
+
+    const products: ProductData[] = [];
     for (let i = 0; i < productLength; i++) {
-      products.push(
-        <Product
-          key={i}
-          id={i}
-          setSuccess={setSuccess}
-          setError={setError}
-          setLoading={setLoading}
-          loading={loading}
-          clear={clear}
-        />
-      );
+      products.push({
+        id: i,
+        name: productNames[i],
+        // Add other product properties here as needed
+      });
     }
     return products;
-  };
+  }
 
-  // Return the JSX for the component
   return (
     <div>
-      {/* If there is an alert, display it */}
       {error && <ErrorAlert message={error} clear={clear} />}
       {success && <SuccessAlert message={success} />}
       {loading && <LoadingAlert message={loading} />}
-      {/* Display the products */}
+      <ProductFilter products={getProducts()} setFilteredProducts={setFilteredProducts} />
       <div className="mx-auto max-w-2xl py-16 px-4 sm:py-24 sm:px-6 lg:max-w-7xl lg:px-8">
         <h2 className="sr-only">Products</h2>
         <div className="grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-3 xl:gap-x-8">
-          {/* Loop through the products and return the Product component */}
-          {getProducts()}
+          {filteredProducts.length > 0 ? (
+            filteredProducts.map((product) => (
+              <Product
+                key={product.id}
+                id={product.id}
+                name={product.name}
+                setSuccess={setSuccess}
+                setError={setError}
+                setLoading={setLoading}
+                loading={loading}
+                clear={clear}
+              />
+            ))
+          ) : (
+            <p className="text-gray-500 text-center w-full col-span-3">
+              No products found. Please try a different search term.
+            </p>
+          )}
         </div>
       </div>
     </div>
