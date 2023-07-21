@@ -4,7 +4,7 @@
 [Live Demo](https://sneakerpunk-celo-frontend-react-app.vercel.app/)
 
 ## Description
-Sneakerpunk is the platform where anyone can explore,purchase.list and sell sneakers.
+Sneakerpunk is the platform where anyone can explore,purchase.list and sell sneakers.You can also have an Overview of all products by seeing who is the owner of the product,location of the product,Price of the Product,How many have sold and Image of the product.
 
 
 
