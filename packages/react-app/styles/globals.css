@@ -30,3 +30,11 @@
       rgb(228, 134, 26) 89%
     );
 }
+
+table {
+  width:100%;
+}
+table, th, td {
+  border: 2px solid white;
+  border-radius: 10px;
+}

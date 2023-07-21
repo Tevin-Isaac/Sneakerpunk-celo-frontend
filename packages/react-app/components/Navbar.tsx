@@ -3,6 +3,7 @@ import { Disclosure } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { ConnectButton } from '@rainbow-me/rainbowkit';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -56,12 +57,18 @@ const Navbar = () => {
                   />
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-                  <a
-                    href="#"
+                  <Link
+                    href="/"
                     className="inline-flex items-center border-b-2 border-black px-1 pt-1 text-sm font-medium text-gray-900"
                   >
                     Home
-                  </a>
+                  </Link>
+                  <Link
+                    href="overview"
+                    className="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900"
+                  >
+                    Overview product
+                  </Link>
                   {/* Add more menu items here */}
                 </div>
               </div>
